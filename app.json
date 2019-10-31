@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/authorize/authorize",
+    "pages/found/found",
+    "pages/carts/carts",
+    "pages/my/my",
+    "pages/datas/datas",
+    "pages/search/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#BC9775",
+    "navigationBarTitleText": "gss的小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#4a90e2",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon_home_line.png",
+        "selectedIconPath": "images/icon_home_solid.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "iconPath": "images/icon_monitor_line.png",
+        "selectedIconPath": "images/icon_monitor_solid.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/carts/carts",
+        "iconPath": "images/carts.png",
+        "selectedIconPath": "images/icon_carts.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/icon_me_line.png",
+        "selectedIconPath": "images/icon_me_solid.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

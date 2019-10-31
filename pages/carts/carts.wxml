@@ -1,0 +1,21 @@
+<!--选择手机相册上传或者拍照-->
+<view class="container">
+    <view>
+        <button type="default" bindtap="gotoShow" >点击上传照片</button>
+    </view>
+    <view>
+        <image class= "show-image" mode="aspectFitf" src="{{src}}"></image>
+    </view>
+</view>
+
+
+
+<!-- 搜索框 -->
+<view class="index-search-box">
+    <navigator class="index-search" hover-class="none" openType="navigate" url="../search/index">
+        <view class="index-cont-search t-c">
+            <icon class="text-center" color="{{searchColor}}" size="{{searchSize}}" type="search"></icon>
+            <text>{{searchName}}</text>
+        </view>
+    </navigator>
+</view>

@@ -1,0 +1,53 @@
+@import "../datas/datas.wxss";
+/*page,*/
+/*.page,*/
+/*.page__bd{*/
+    /*height: 100%;*/
+/*}*/
+/*.page__bd{*/
+    /*padding-bottom: 0;*/
+/*}*/
+/*.weui-tab__content{*/
+    /*padding-top: 60px;*/
+    /*text-align: center;*/
+/*}*/
+/*.weui-navbar__slider {*/
+    /*width: 2em;*/
+/*}*/
+/*模态框*/
+.modalss {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modalss-cancel {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.bottom-dialog-bodys {
+    position: absolute;
+    z-index: 10001;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30 rpx;
+    /*height: 800 rpx;*/
+    background-color: #fff;
+}
+
+/*动画前初始位置*/
+.bottom-poss {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+

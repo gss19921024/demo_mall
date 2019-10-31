@@ -1,0 +1,68 @@
+/* pages/dateSelect/dateSelect.wxss */
+
+.date-day {
+    display: flex;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.date-day.bgitem {
+    background-color: #d8ecf9;
+}
+
+.date-day.active {
+    background: #099fde;
+    color: #fff;
+}
+
+.date-day.unavailable {
+    color: #aaa;
+}
+
+.date-week {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+}
+
+.week {
+    color: #099fde;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-days {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35rpx;
+}
+.amount{
+    font-size: 30rpx;
+}
+.bgwhite {
+    background-color: #fff;
+}
+
+.date-year-month {
+    text-align: center;
+    font-size: 35rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date-year-month image{
+    height: 50rpx;
+    width: 50rpx;
+    margin: 0 30rpx;
+}

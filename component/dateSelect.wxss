@@ -1,0 +1,52 @@
+
+.border-b-f02222{
+    border-bottom:  1px solid #f02222
+}
+.month-img {
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: 60%;
+}
+.day-box{
+    height:70rpx;
+}
+.width-p-100 {
+    width: 100%;
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.align-c {
+    align-items: center;
+}
+.flex-p-20{
+    flex:  0 0 20%
+}
+.fix_font14{
+    font-size:28rpx
+}
+.text_c {
+    text-align: center;
+}
+.fix_bgeee {
+    background-color: #eee;
+}
+
+.fix_bgfff {
+    background-color: #fff;
+}
+.width-p20 {
+    width: 20%;
+}
+.padding-10-0 {
+    padding: 20rpx 0;
+}
+
+.border-bottom-ec {
+    border-bottom: 1px solid #ececec;
+}

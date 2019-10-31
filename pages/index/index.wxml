@@ -1,0 +1,4 @@
+<view>
+    首页
+    <view bindtap="toDatas">日期</view>
+</view>
