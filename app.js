@@ -37,6 +37,27 @@ App({
             }
         })
     },
+    //检验授权的方法
+    getSettings:function () {
+        let that = this
+        wx.getSetting({
+            success: (res) => {
+                if (res.authSetting['scope.userInfo']) {//授权了，可以获取用户信息了
+                    wx.getUserInfo({
+                        success: (res) => {
+                            // wx.setStorageSync('userInfo', res.userInfo);
+                            // console.log(222222, wx.getStorageSync('userInfo'))
+
+                        }
+                    })
+                } else {//未授权，跳到授权页面
+                    wx.redirectTo({
+                        url: '../authorize/authorize',//授权页面
+                    })
+                }
+            }
+        })
+    },
     globalData: {
         userInfo: "",//用户信息
         openId: "",//登录用户的唯一标识

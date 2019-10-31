@@ -21,13 +21,23 @@ Page({
                     city: e.detail.userInfo.city//用户注册的市
                 }
             }).then((data) => {
+                let pages = getCurrentPages();
+                if (pages.length) {
+                    if (pages.length == 1) {
+                        wx.switchTab({
+                            url: '../my/my',
+                        })
+                    }else {
+                        wx.navigateBack({
+                            delta: 1,
+                        })
+                    }
+                }
 
-                wx.switchTab({
-                    url: '../index/index',
-                })
             }).catch((errorMsg) => {
                 console.log(errorMsg)
             })
+            wx.setStorageSync('userInfo', e.detail.userInfo)
         } else {
 
             wx.showModal({
