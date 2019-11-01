@@ -2,3 +2,19 @@
     首页
     <view bindtap="toDatas">日期</view>
 </view>
+
+<view>轮询公告</view>
+<view class="notic">
+    <view class="logo">
+        <image src="/assets/svg/index/bottom-home1.svg"/>
+        <text>轮询</text>
+    </view>
+    <view class="text">
+        <view class="contentWrp">
+            <view class="transtion">
+                <text wx:for="{{notice}}" wx:key="{{index}}">{{item.title}}</text>
+                <text wx:for="{{notice}}" wx:key="{{index}}">{{item.title}}</text>
+            </view>
+        </view>
+    </view>
+</view>

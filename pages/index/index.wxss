@@ -1,0 +1,84 @@
+@-webkit-keyframes notice {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+@keyframes notice {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+.notic {
+    background: #fff;
+    display: flex;
+    height: 100rpx;
+    margin-bottom: 10rpx;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 130rpx;
+    flex: 0 0 130rpx;
+    position: relative;
+}
+.logo image {
+    background: none;
+    display: block;
+    margin: 0;
+    width: 40rpx;
+    height: 40rpx;
+}
+.logo text {
+    margin-top: 4rpx;
+    color: red;
+    font-size: 16rpx;
+}
+.text {
+    height: 100%;
+    flex: 1;
+    font-size: 26rpx;
+    line-height: 100rpx;
+    color: #333;
+    margin-left: 20rpx;
+    margin-right: 30rpx;
+    overflow: hidden;
+}
+.contentWrp {
+    width: 1000%;
+}
+.transtion {
+    display: inline-block;
+    /*transition: all .3s;*/
+    animation: notice 6s linear infinite;
+    white-space: nowrap;
+}
+.transtion text {
+    display: inline-block;
+    padding-right: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
